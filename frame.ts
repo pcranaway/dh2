@@ -1,12 +1,18 @@
 import { Stream } from "./stream.ts";
 
 export enum FrameType {
-  HEADERS,
   DATA,
+  HEADERS,
+  PRIORITY,
+  RST_STREAM,
   SETTINGS,
-  WINDOW_UPDATE,
-  PUSH_PROMSE,
+  PUSH_PROMISE,
+  PING,
   GOAWAY,
+  WINDOW_UPDATE,
+  CONTINUATION,
+  ALTSVC,
+  ORIGIN,
 }
 
 export interface Frame {
