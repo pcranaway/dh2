@@ -13,4 +13,5 @@ export interface Frame {
   stream: Stream;
   type: FrameType;
   data: Uint8Array;
+  flags?: Record<string, boolean>;
 }
