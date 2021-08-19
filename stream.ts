@@ -1,5 +1,5 @@
-import { ID } from './id.ts';
+import { ID } from "./id.ts";
 
 export interface Stream {
-    id: ID
+  id: ID;
 }
