@@ -3,7 +3,8 @@ export enum FrameType {
     DATA,
     SETTINGS,
     WINDOW_UPDATE,
-    PUSH_PROMSE
+    PUSH_PROMSE,
+    GOAWAY
 };
 
 export interface Frame {
