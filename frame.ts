@@ -1,3 +1,5 @@
+import { Stream } from './stream.ts';
+
 export enum FrameType {
     HEADERS,
     DATA,
@@ -8,6 +10,7 @@ export enum FrameType {
 };
 
 export interface Frame {
+    stream: Stream
     type: FrameType,
     data: Uint8Array
 };
